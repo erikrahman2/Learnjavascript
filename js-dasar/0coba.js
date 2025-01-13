@@ -1,12 +1,35 @@
-// console.log(1 + 20 + 2 - 5);
-// alert("hello world");
+// javascript display possibilities
+// innerhtml
+document.getElementById("first").innerHTML =
+  "teks ini dan angka dibawahnya menggunakan innerhtml";
+document.getElementById("second").innerHTML = 5 + 17;
+
+// write()
+document.write("teks ini menggunakan write");
+
+// alert
+alert("teks ini menggunakan window.alert");
+
+// console.log
+let clog = "teks ini menggunakan console.log";
+console.log(clog);
 
 // variabel biasanya menggunakan var, let, const
 // let, const lebih modern
-var namo = "kerl",
+let namo = "kerl",
   usio = 23,
   hobi = "tido";
-console.log(namo);
+let dato = namo + usio;
+console.log(dato);
+
+// ini comment single line
+
+/*
+ini comment multi line
+ini comment multi line
+ini comment multi line
+ */
+
 let nama = "john doe";
 const umur = 30;
 console.log(nama + umur);
