@@ -1,5 +1,5 @@
 let jmlhangkot = 10;
-let angkotberoperasi = 2;
+let angkotberoperasi = 6;
 let Nmrangkot = 1;
 
 while (Nmrangkot <= angkotberoperasi) {
