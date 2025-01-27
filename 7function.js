@@ -19,18 +19,23 @@ console.log(hasil);
 
 // dengan function
 // ketika ingin menambah kubus baru, maka kita hanya perlu memasukkan nilai kubus baru dan menambahkan fungsi kubus baru
-function totalvolume(a, b, c) {
-  let voluma;
-  let volumb;
-  let volumc;
+function totalvolume(a, b) {
+  //refactoring akan diterapkan dikode ini, agar lebih efisien dan simple
+
+  /* dari pada menggunakan variabel yang panjang seperti ini
+   let voluma;
+   let volumb;
   let total;
 
-  // perhitungan panjang lebar tinggi
-  voluma = a ** 3;
-  volumb = b ** 3;
-  volumc = c ** 3;
+   voluma = a ** 3;
+   volumb = b ** 3;
 
-  total = voluma + volumb + volumc;
-  return total;
+   total = voluma + volumb;
+   
+   return total;
+   */
+
+  // =====lebih baik menghapus variabel seperti di komen di atas dan menyederhanakannya seperti dibawah ini
+  return a ** 3 + b ** 3;
 }
-console.log(totalvolume(8, 3, 4));
+console.log(totalvolume(8, 3));
