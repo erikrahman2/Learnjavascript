@@ -6,6 +6,9 @@ console.log(angka);
 let animal = ["bear", "dog", "cat", "cow"];
 console.log(animal[2]);
 console.log(animal.length); //panjang array
+for (let i = 0; i < 4; i++) {
+  console.log("hewan ke " + (i + 1) + " : " + animal[i]);
+}
 
 let mix = [10, "hello", true, { nama: "erik" }];
 console.log(mix[3]);
