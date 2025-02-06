@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function declaration x function eXpression</title>
+  </head>
+  <body>
+    <h2>func. declaration</h2>
+    <p>
+      Function Declaration adalah cara mendefinisikan fungsi menggunakan kata
+      kunci function, diikuti nama fungsi, parameter (jika ada), dan blok kode
+      yang berisi logika fungsi. Fungsi ini bersifat hoisted, artinya dapat
+      dipanggil sebelum dideklarasikan dalam kode.
+    </p>
+    <pre>
+syntax:
+        function namaFungsi(parameter1, parameter2) {
+            // kode fungsi
+            return hasil;
+}
+    </pre>
+    <p>
+      Karakteristik: <br />
+      Dapat dipanggil di mana saja dalam scope karena hoisting. <br />Nama
+      fungsi wajib ada. <br />Dibaca lebih awal oleh JavaScript sebelum
+      eksekusi.
+    </p>
+
+    <h2>func. eXpression</h2>
+    <p>
+      Function Expression adalah cara mendefinisikan fungsi dengan menyimpannya
+      ke dalam variabel. Fungsi ini tidak di-hoist, sehingga hanya dapat
+      dipanggil setelah deklarasi variabel.
+    </p>
+    <pre>
+syntax:
+        const namaVariabel = function(parameter1, parameter2) {
+            // kode fungsi
+            return hasil;
+        };
+        
+    </pre>
+    <p>
+      Karakteristik: <br />Tidak di-hoist, sehingga hanya dapat dipanggil
+      setelah dideklarasikan. <br />Nama fungsi opsional (anonymous function).
+      <br />
+      Lebih fleksibel untuk digunakan sebagai nilai variabel, parameter, atau
+      callback.
+    </p>
+    <h2>kapan menggunakan function diatas</h2>
+    <p>
+      Function Declaration: <br /><br />
+
+      Cocok untuk fungsi umum yang digunakan di berbagai tempat. Baik untuk
+      mendefinisikan fungsi utama dalam program. Function Expression:
+      <br />
+      Digunakan saat fungsi hanya dibutuhkan pada konteks tertentu (misalnya
+      sebagai callback). Berguna untuk mendeklarasikan fungsi lokal atau fungsi
+      anonim.
+    </p>
+    <script src="11dec&ex.js"></script>
+  </body>
+</html>

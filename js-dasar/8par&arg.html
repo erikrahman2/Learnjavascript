@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parameter & Argument</title>
+  </head>
+  <body>
+    <h2>parameter & argument</h2>
+    <h3>parameter</h3>
+    <pre>
+Parameter adalah variabel yang didefinisikan dalam deklarasi function. 
+Parameter bertindak sebagai "placeholder" untuk nilai yang akan diberikan 
+ketika function dipanggil.
+
+        Parameter hanya ada saat kamu mendefinisikan sebuah function.
+        Jumlah parameter ditentukan oleh pembuat function.
+        Contoh Parameter:
+  
+        function sapa(nama, umur) {
+            console.log(`Halo ${nama}, kamu berumur ${umur} tahun.`);
+        }
+        Pada contoh di atas:
+        
+        nama dan umur adalah parameter dari function sapa.
+        </pre
+    >
+    <h3>argument</h3>
+    <pre>
+Argument adalah nilai nyata yang dikirim ke function saat function 
+dipanggil. Argument akan mengisi parameter pada saat runtime.
+
+        Jumlah argument bisa sama, kurang, atau lebih dari parameter.
+        Argument memberikan data aktual yang digunakan oleh function.
+        Contoh Argument:
+
+        sapa("Erik", 20); // Argument: "Erik" dan 20
+        Pada contoh ini:
+        
+        "Erik" adalah argument untuk parameter nama.
+        20 adalah argument untuk parameter umur.
+        </pre
+    >
+    <pre>
+Perbedaan Parameter dan Argument
+    Aspek	            Parameter	            Argument
+    Definisi	Placeholder yang                Nilai nyata yang diberikan
+                didefinisikan di function.      saat function dipanggil.
+
+    Waktu       Saat mendefinisikan function.   Saat memanggil function.
+    Penggunaan		
+
+    Contoh      function tambah(a, b) { ... }   tambah(5, 10)
+    Jumlah      Tetap sesuai definisi function. Bisa bervariasi (lebih, 
+                                                kurang, atau sama).</pre
+    >
+    <pre>
+      Kesimpulan
+Parameter: Placeholder yang kamu definisikan dalam deklarasi function.
+Argument: Nilai nyata yang kamu kirim ke function saat dipanggil.
+Tips: Pastikan jumlah parameter dan argument sinkron untuk menghindari bug, 
+kecuali kamu memang ingin menangani argument dinamis.
+    </pre>
+    <script src="8par&arg.js"></script>
+  </body>
+</html>
