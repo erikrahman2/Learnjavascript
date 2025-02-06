@@ -37,3 +37,13 @@ let mhsw3 = mahasiswa("karen", "informatika", 2); //tanpa 'new' key nya tidak ak
 console.log(mhsw1);
 console.log(mhsw2);
 console.log(mhsw3);
+
+// JSON
+// a. Mengubah Object ke JSON (JSON.stringify)
+let siswa = { nama: "Rina", kelas: "XII IPA" };
+let jsonSiswa = JSON.stringify(siswa);
+console.log(jsonSiswa); // Output: '{"nama":"Rina","kelas":"XII IPA"}'
+
+// b. Mengubah JSON ke Object (JSON.parse)
+let objekSiswa = JSON.parse(jsonSiswa);
+console.log(objekSiswa.nama); // Output: "Rina"
