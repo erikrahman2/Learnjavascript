@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="0dom.css" />
+  </head>
+  <body>
+    <h2>JavaScript DOM (Document Object Model)</h2>
+    <p>
+      adalah API yang memungkinkan JavaScript untuk berinteraksi dengan dan
+      memanipulasi elemen HTML dan struktur dokumen web secara dinamis.
+    </p>
+    <h2>konsep dasar Document object model</h2>
+    <p>
+      DOM merepresentasikan halaman web dalam bentuk pohon dokumen, di mana
+      setiap elemen adalah sebuah node yang bisa dimanipulasi menggunakan
+      javascript
+    </p>
+    <h4>contoh struktur DOM untuk Html:</h4>
+    <pre>
+        !doctype html
+        html 
+        head
+            title 'DOM Example' /title 
+        /head
+        body 
+            h1 id= judul 'hello dom' /h1
+            p class= text 'paragraf pertama' /p 
+        /body 
+        /html
+    </pre>
+    <!-- contoh -->
+    <h1 id="judul">hello dom</h1>
+    <p class="text">paragraf pertama</p>
+
+    <h4>struktur DOMnya:</h4>
+    <pre>
+    document
+    ├── html
+    │   ├── head
+    │   │   ├── title
+    │   ├── body
+    │       ├── h1#judul
+    │       ├── p.text
+
+    </pre>
+
+    <script src="0dom.js" defer></script>
+  </body>
+</html>
