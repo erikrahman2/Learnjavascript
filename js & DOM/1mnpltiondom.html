@@ -12,9 +12,70 @@
       secara dinamis. Dengan ini, kita bisa menambah, menghapus, atau mengubah
       elemen dan isinya tanpa harus menyegarkan halaman.
     </p>
-    <h2 id="si">manipulasi elemen</h2>
-    <p></p>
+    <!-- manipulasi elemen -->
+    <h2 id="si">Manipulasi Elemen (Element Nodes)</h2>
+    <p>
+      Elemen dalam DOM merujuk pada tag HTML yang dapat diubah atau dimanipulasi
+      seperti div, p, button, dll.
+    </p>
+    <pre>
+      let title = document.getElementById("judul"); // Ambil elemen dengan id
+      let paragraphs = document.getElementsByTagName("p"); // Ambil semua elemen p
+      let boxes = document.getElementsByClassName("box"); // Ambil elemen dengan class tertentu
+      let button = document.querySelector("#myButton"); // Ambil elemen pertama yang cocok dengan selector
+      let allItems = document.querySelectorAll(".item"); // Ambil semua elemen dengan class "item"
+    </pre>
 
+    <!-- manipulasi node -->
+    <h2>Manipulasi Node (Semua Jenis Node dalam DOM)</h2>
+    <section class="snode">
+      <p>
+        Selain elemen, DOM juga memiliki node lain, seperti text node, comment
+        node, dan document node.
+      </p>
+      <pre>
+      createElement() → Membuat elemen baru
+      appendChild(), prepend() → Menambahkan elemen
+      insertBefore(newElement, referenceElement) digunakan untuk menyisipkan 
+      elemen sebelum elemen referensi di dalam suatu parent node.
+      remove(), removeChild() → Menghapus elemen
+      replaceChild() → Mengganti elemen
+      cloneNode() → Menyalin elemen
+      </pre>
+    </section>
+    <!-- tes node  -->
+    <section class="nodetes">
+      <ul>
+        <li>teks 1</li>
+        <li>teks 2</li>
+        <li>teks 3</li>
+      </ul>
+    </section>
+    <h3>
+      jadi, Node adalah segala sesuatu yang ada di dalam DOM (Document Object
+      Model). Setiap bagian dari halaman HTML dianggap sebagai node, termasuk:
+      Elemen (div, p, h1...) Teks ("Halo Dunia" dalam p Halo Dunia p ) Atribut
+      (class="judul") Komentar (<!-- Komentar -->) Dokumen (document)
+      <br />
+      Apa Itu Elemen? Elemen (Element Node) adalah bagian dari Node yang berupa
+      tag HTML, seperti div, p, span, dll. Singkatnya: Semua Elemen adalah Node,
+      tetapi Tidak Semua Node adalah Elemen (karena ada teks, komentar, dll.).
+    </h3>
+    <h3>struktur domnya:</h3>
+    <pre>
+#document (Node)
+
+      ├── html> (Element Node)
+
+      │    ├── body> (Element Node)
+
+      │    │    ├── div id="container"> (Element Node)
+
+      │    │    │    ├── p class="text"> (Element Node)
+      
+      │    │    │    │    ├── "Halo Dunia" (Text Node)
+     </pre
+    >
     <script src="1mnpltiondom.js"></script>
   </body>
 </html>
