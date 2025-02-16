@@ -1,0 +1,9 @@
+.sefirst {
+}
+
+.sefirst li {
+  list-style: none;
+  padding: 20px;
+  margin: 2px;
+  border: 1px solid;
+}

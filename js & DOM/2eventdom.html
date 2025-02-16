@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom events</title>
+    <link rel="stylesheet" href="2eventdom.css" />
+  </head>
+  <body>
+    <h2>events</h2>
+    <p>
+      DOM Event adalah peristiwa yang terjadi pada elemen HTML, seperti klik
+      tombol, mengetik di input, atau menggulir halaman. JavaScript memungkinkan
+      kita untuk menangani event ini dengan berbagai cara.
+    </p>
+    <section class="sefirst">
+      <h2>cara menangani event:</h2>
+      <h4>kasus: event ketika kotak dibawah di klik akan berubah warna</h4>
+      <ul>
+        <!-- event atribute -->
+        <!-- penggunaan event attribute di inline html tidak disarankan, karena tidak fleksibel -->
+        <!-- tambahkan kode ini dalam onclick alert('anda mengklik area ini'); jika ingin menambahkan alert -->
+        <li onclick="this.style.backgroundColor='red';">
+          event attribute -- inline html
+          <p>
+            cara ini tidak fleksibel dan sangat tidak disarankan untuk big
+            project
+          </p>
+        </li>
+        <li id="btn2">
+          event handler -- javascript
+          <p>
+            cara ini Hanya bisa satu event per elemen (menimpa event sebelumnya)
+          </p>
+        </li>
+        <li>
+          addeventlistener()
+          <p>cara ini sangat disarankan</p>
+          <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- script -->
+    <script src="2eventdom.js"></script>
+  </body>
+</html>
